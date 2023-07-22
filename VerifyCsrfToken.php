@@ -12,10 +12,8 @@ class VerifyCsrfToken extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        //
-        'http://localhost:1234/todo',
-        'http://localhost:1234/todo/*',
-        'http://localhost:1234/users/signup',
-        'http://localhost:1234/users/signin',
+        'http://localhost:8000/todo/add/',
+        'http://localhost:8000/todo/edit/*',
+        'http://localhost:8000/todo/delete/*'
     ];
 }
